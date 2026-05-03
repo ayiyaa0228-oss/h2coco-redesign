@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2coco - Shopping Cart</title>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+ 
+<body>
+    <!---------------- Header ----------------->
+    <header class="header">
+        <div class="header-inner">
+            <nav class="nav-left">
+                <a href="index.html" class="nav-home-icon" aria-label="Home">
+                    <img src="images/home-icon.png" alt="Home" width="22" height="22">
+                </a>
+                <a href="product_list.html">SHOP</a>
+                <a href="#">STORY</a>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="H2coco">
+            </a>
+            <nav class="nav-right">
+                <a href="#">FAQ</a>
+                <a href="#">CONTACT</a>
+                <a href="cart.html" class="icon-btn" aria-label="Cart">
+                    <img src="images/cart.png" alt="Cart" width="24" height="24">
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+            <button class="hamburger" aria-label="Menu">
+                <img src="images/Menu.png" alt="Menu" width="24" height="24">
+            </button>
+            <div class="header-icons">
+                <a href="search.html" class="icon-btn" aria-label="Search">
+                    <img src="images/Search.png" alt="Search" width="24" height="24">
+                </a>
+                <a href="cart.html" class="icon-btn" aria-label="Cart">
+                    <img src="images/cart.png" alt="Cart" width="24" height="24">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+ 
+    <main class="cart-main">
+
+        <a href="product_list.html" class="back-btn" aria-label="Go back">
+            <img src="images/back-icon.png" alt="Back" width="63" height="63">
+        </a>
+ 
+        <!-- ===== empty cart ===== -->
+        <div class="cart-empty" id="cart-empty">
+ 
+            <h1 class="cart-title">Shopping Cart</h1>
+            <p class="cart-empty-text">Your cart is empty</p>
+            <a href="product_list.html" class="btn-continue">Contine Shopping</a>
+ 
+        </div>
+ 
+        <!-- ===== cart with product ===== -->
+        <div class="cart-full" id="cart-full" style="display: none;">
+            <!-- js -->
+        </div>
+ 
+        <!-- ===== Suggest For You ===== -->
+        <section class="cart-suggest">
+            <h2 class="suggest-title">Suggest For You</h2>
+
+            <div class="suggest-list">
+ 
+                <!-- card 1 -->
+                <div class="suggest-card">
+                    <a href="product_list.html" class="suggest-cart-icon" aria-label="Add to cart">
+                        <img src="images/cart.png" alt="cart" width="37" height="37">
+                    </a>
+                    <img src="images/flavour-9.png" alt="Coconut Water" class="suggest-img">
+                </div>
+ 
+                <!-- card 2 -->
+                <div class="suggest-card">
+                    <a href="product_list.html" class="suggest-cart-icon" aria-label="Add to cart">
+                        <img src="images/cart.png" alt="cart" width="37" height="37">
+                    </a>
+                    <img src="images/flavour-2.png" alt="Coconut Water Mango" class="suggest-img">
+                </div>
+ 
+                <!-- card 3 -->
+                <div class="suggest-card">
+                    <a href="product_list.html" class="suggest-cart-icon" aria-label="Add to cart">
+                        <img src="images/cart.png" alt="cart" width="37" height="37">
+                    </a>
+                    <img src="images/flavour-8.png" alt="Coconut Water Chocolate" class="suggest-img">
+                </div>
+ 
+                <!-- card 4 -->
+                <div class="suggest-card">
+                    <a href="product_list.html" class="suggest-cart-icon" aria-label="Add to cart">
+                        <img src="images/cart.png" alt="cart" width="37" height="37">
+                    </a>
+                    <img src="images/flavour-1.png" alt="Pure Coconut Water" class="suggest-img">
+                </div>
+ 
+                <!-- card 5 -->
+                <div class="suggest-card">
+                    <a href="product_list.html" class="suggest-cart-icon" aria-label="Add to cart">
+                        <img src="images/cart.png" alt="cart" width="37" height="37">
+                    </a>
+                    <img src="images/flavour-6.png" alt="Pure Coconut Water 2L" class="suggest-img">
+                </div>
+ 
+                <!-- card 6 -->
+                <div class="suggest-card">
+                    <a href="product_list.html" class="suggest-cart-icon" aria-label="Add to cart">
+                        <img src="images/cart.png" alt="cart" width="37" height="37">
+                    </a>
+                    <img src="images/flavour-5.png" alt="Coconut Water" class="suggest-img">
+                </div>
+ 
+            </div>
+        </section>
+ 
+    </main>
+ 
+    <!---------------- Footer ----------------->
+    <div class="footer-tagline">
+        Choose H2 to help make every day healthier.
+    </div>
+ 
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Follow us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>How To Shop</h4>
+                <ul>
+                    <li><a href="product_list.html">Buy Now</a></li>
+                    <li><a href="#">Subscribe & Save</a></li>
+                    <li><a href="#">Rewards Program</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copyright">© 2026 H2coco. All rights reserved.</p>
+    </footer>
+ 
+</body>
+</html>
