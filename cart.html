@@ -11,6 +11,7 @@
  
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/product_detail.css">
 </head>
  
 <body>
@@ -51,24 +52,90 @@
     </header>
  
     <main class="cart-main">
-
-        <a href="product_list.html" class="back-btn" aria-label="Go back">
-            <img src="images/back-icon.png" alt="Back" width="63" height="63">
-        </a>
+        
+        <div class="back-btn-wrapper">
+            <a href="product_list.html" class="back-btn" aria-label="Go back">
+                <img src="images/back-icon.png" alt="Back" width="63" height="63">
+            </a>
+        </div>
  
         <!-- ===== empty cart ===== -->
-        <div class="cart-empty" id="cart-empty">
+        <div class="cart-empty" id="cart-empty" style="display: none;">
  
             <h1 class="cart-title">Shopping Cart</h1>
             <p class="cart-empty-text">Your cart is empty</p>
-            <a href="product_list.html" class="btn-continue">Contine Shopping</a>
+            <a href="product_list.html" class="btn-continue">Continue Shopping</a>
  
         </div>
  
         <!-- ===== cart with product ===== -->
-        <div class="cart-full" id="cart-full" style="display: none;">
-            <!-- js -->
+        <div class="cart-full" id="cart-full" >
+
+            <h1 class="cart-title">Shopping Cart</h1>
+ 
+            <div class="cart-steps">
+                <div class="step step-active">1</div>
+                <div class="step">2</div>
+                <div class="step">3</div>
+            </div>
+ 
+            <div class="cart-content">
+                <div class="cart-items">
+ 
+                    <!-- product card -->
+                    <div class="cart-item-card">
+                        <img src="images/cancel_icon.png" alt="Remove" class="cancel-icon" width="36" height="36">
+                        <img src="images/flavour-1.png" alt="Pure Coconut Water" class="cart-item-img">
+                        <div class="cart-item-info">
+                            <div class="cart-item-row">
+                                <span class="cart-info-label">Product:</span>
+                                <span class="cart-info-value">Pure Coconut Water<br>500mL/12 can</span>
+                            </div>
+                            <div class="cart-item-row">
+                                <span class="cart-info-label">Price:</span>
+                                <span class="cart-info-value">$ 37</span>
+                            </div>
+                            <div class="cart-item-row">
+                                <span class="cart-info-label">quantity:</span>
+
+                                <div class="cart-qty-controller">
+                                    <button class="qty-btn" aria-label="Decrease"><span>−</span></button>
+                                    <span class="qty-number">1</span>
+                                    <button class="qty-btn" aria-label="Increase"><span>+</span></button>
+                                </div>
+                            </div>
+                            <div class="cart-item-row">
+                                <span class="cart-info-label">Subtotal:</span>
+                                <span class="cart-info-value">$ 37</span>
+                            </div>
+                        </div>
+                    </div>
+ 
+                </div>
+ 
+                <div class="cart-summary">
+ 
+                    <a href="product_list.html" class="btn-continue-full">Continue Shopping</a>
+ 
+                    <div class="coupon-row">
+                        <input type="text" class="coupon-input" placeholder="coupon code">
+                        <button class="btn-apply">Apply</button>
+                    </div>
+ 
+                    <div class="cart-total-box">
+                        <span class="total-label">Total</span>
+                        <span class="total-price">$ 37</span>
+                    </div>
+ 
+                    <a href="payment.html" class="btn-checkout-cart">
+                        Checkout
+                        <span class="checkout-arrow">→</span>
+                    </a>
+ 
+                </div>
+            </div>
         </div>
+
  
         <!-- ===== Suggest For You ===== -->
         <section class="cart-suggest">
