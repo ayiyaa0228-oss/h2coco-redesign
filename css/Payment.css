@@ -1,0 +1,394 @@
+/* ===== Payment Main ===== */
+.payment-main {
+    background-color: var(--color-white);
+    min-height: 60vh;
+    padding-top: 1px;
+    padding-bottom: 60px;
+}
+ 
+/* ===== Back button ===== */
+.back-btn-wrapper {
+    padding-left: 160px;
+    margin-top: 39px;
+}
+ 
+.back-btn {
+    display: inline-block;
+    margin: 0;
+}
+ 
+.back-btn img {
+    width: 50px;
+    height: 50px;
+}
+ 
+/* ===== Title ===== */
+.payment-title {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+ 
+/* ===== Steps ===== */
+.payment-steps {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+ 
+.step {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.step-active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+ 
+/* ===== Main layout ===== */
+.payment-content {
+    display: flex;
+    gap: 30px;
+    padding: 0 160px;
+    align-items: flex-start;
+    justify-content: center;
+}
+ 
+/* ===== Left: Form ===== */
+.payment-form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+ 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+ 
+.form-label {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+ 
+.form-input {
+    width: 437.29px;
+    height: 54.34px;
+    border: 2px solid var(--color-accent);
+    background-color: var(--color-bg-light);
+    padding: 0 16px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--color-text-dark);
+    outline: none;
+}
+ 
+.form-input:focus {
+    border-color: var(--color-primary);
+}
+ 
+/* State dropdown */
+.select-wrapper {
+    position: relative;
+    width: 435.99px;
+}
+ 
+.form-select {
+    width: 100%;
+    height: 34.93px;
+    border: 1.5px solid var(--color-accent);
+    background-color: var(--color-bg-light);
+    border-radius: 6.47px;
+    padding: 0 36px 0 12px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--color-text-dark);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+ 
+.select-arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: var(--color-text-dark);
+    pointer-events: none;
+}
+ 
+/* Checkboxes */
+.form-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4px;
+}
+ 
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+ 
+.checkbox-input {
+    display: none;
+}
+ 
+.checkbox-box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-primary);
+    border-radius: 3px;
+    background-color: var(--color-white);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+ 
+.checkbox-input:checked + .checkbox-box {
+    background-color: var(--color-primary);
+}
+ 
+.checkbox-input:checked + .checkbox-box::after {
+    content: '✓';
+    color: var(--color-white);
+    font-size: 13px;
+    font-weight: 700;
+}
+ 
+.checkbox-text {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color:  var(--color-text-dark);
+}
+ 
+.policy-link {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+ 
+/* ===== Right: Summary + Payment ===== */
+.payment-summary-section {
+    width: 579.6px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+ 
+/* Shopping bill */
+.shopping-bill {
+    width: 579.6px;
+}
+ 
+.bill-title {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 8px;
+}
+ 
+.bill-table {
+    width: 579.6px;
+    height: 193.5px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    outline: 2px solid var(--color-accent);
+}
+ 
+.bill-th {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    padding: 12px 20px;
+    border-bottom: 1.5px solid var(--color-accent);
+    background-color: var(--color-bg-light);
+    text-align: left;
+}
+ 
+.bill-th-right {
+    text-align: right;
+}
+ 
+.bill-td {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--color-text-dark);
+    padding: 12px 20px;
+    text-align: left;
+}
+ 
+.bill-td-right {
+    text-align: right;
+}
+ 
+.bill-total-label,
+.bill-total-price {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    padding: 12px 20px;
+    border-top: 1.5px solid var(--color-accent);
+    background-color: var(--color-bg-light);
+}
+ 
+.bill-total-price {
+    text-align: right;
+}
+ 
+/* Continue to Payment button */
+.btn-continue-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 579.6px;
+    height: 73.8px;
+    border-radius: 18px;
+    background-color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-bg-soft);
+    text-decoration: none;
+}
+ 
+.payment-arrow {
+    font-size: 22px;
+}
+ 
+ 
+/* ===== Mobile ===== */
+@media (max-width: 1023px) {
+ 
+    .back-btn-wrapper {
+        padding-left: 25px;
+        margin-top: 19px;
+    }
+ 
+    .back-btn img {
+        width: 30px;
+        height: 30px;
+    }
+ 
+    .payment-title {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+ 
+    .payment-steps {
+        gap: 30px;
+        margin-bottom: 24px;
+        margin-top: 25px;
+    }
+ 
+    .step {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+ 
+    .payment-content {
+        flex-direction: column;
+        padding: 0 33px;
+        gap: 30px;
+    }
+ 
+    .payment-form-section {
+        width: 100%;
+        gap: 12px;
+    }
+ 
+    .form-label {
+        font-size: 15px;
+    }
+ 
+    .form-input {
+        width: 100%;
+        height: 44px;
+        font-size: 14px;
+    }
+ 
+    .select-wrapper {
+        width: 100%;
+    }
+ 
+    .form-select {
+        width: 100%;
+        font-size: 14px;
+    }
+ 
+    .checkbox-text {
+        font-size: 13px;
+    }
+ 
+    .payment-summary-section {
+        width: 100%;
+    }
+ 
+    .shopping-bill {
+        width: 100%;
+    }
+ 
+    .bill-table {
+        width: 100%;
+        height: auto;
+    }
+ 
+    .bill-th {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+ 
+    .bill-td {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+ 
+    .bill-total-label,
+    .bill-total-price {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+ 
+ 
+    .btn-continue-payment {
+        width: 100%;
+        height: 54px;
+        font-size: 18px;
+        border-radius: 12px;
+    }
+}

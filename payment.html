@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2coco - Payment</title>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+ 
+<body>
+    <!---------------- Header ----------------->
+    <header class="header">
+        <div class="header-inner">
+            <nav class="nav-left">
+                <a href="index.html" class="nav-home-icon" aria-label="Home">
+                    <img src="images/home-icon.png" alt="Home" width="22" height="22">
+                </a>
+                <a href="product_list.html">SHOP</a>
+                <a href="#">STORY</a>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="H2coco">
+            </a>
+            <nav class="nav-right">
+                <a href="#">FAQ</a>
+                <a href="#">CONTACT</a>
+                <a href="cart.html" class="icon-btn" aria-label="Cart">
+                    <img src="images/cart.png" alt="Cart" width="24" height="24">
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+            <button class="hamburger" aria-label="Menu">
+                <img src="images/Menu.png" alt="Menu" width="24" height="24">
+            </button>
+            <div class="header-icons">
+                <a href="search.html" class="icon-btn" aria-label="Search">
+                    <img src="images/Search.png" alt="Search" width="24" height="24">
+                </a>
+                <a href="cart.html" class="icon-btn" aria-label="Cart">
+                    <img src="images/cart.png" alt="Cart" width="24" height="24">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+ 
+    <main class="payment-main">
+ 
+        <!-- Back button -->
+        <div class="back-btn-wrapper">
+            <a href="cart.html" class="back-btn" aria-label="Go back">
+                <img src="images/back-icon.png" alt="Back" width="63" height="63">
+            </a>
+        </div>
+ 
+        <!-- Title -->
+        <h1 class="payment-title">Payment</h1>
+ 
+        <!-- Steps -->
+        <div class="payment-steps">
+            <div class="step">1</div>
+            <div class="step step-active">2</div>
+            <div class="step">3</div>
+        </div>
+ 
+        <!-- Main content: left form + right summary -->
+        <div class="payment-content">
+ 
+            <!-- Left: form -->
+            <div class="payment-form-section">
+ 
+                <div class="form-group">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-input" placeholder="">
+                </div>
+ 
+                <div class="form-group">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-input" placeholder="">
+                </div>
+ 
+                <div class="form-group">
+                    <label class="form-label">Address</label>
+                    <input type="text" class="form-input" placeholder="">
+                </div>
+ 
+                <div class="form-group">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-input" placeholder="">
+                </div>
+ 
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" placeholder="">
+                </div>
+ 
+                <!-- State dropdown -->
+                <div class="form-group">
+                    <label class="form-label">State</label>
+                    <div class="select-wrapper">
+                        <select class="form-select">
+                            <option value="">Select a state</option>
+                            <option value="NSW">New South Wales</option>
+                            <option value="VIC">Victoria</option>
+                            <option value="QLD">Queensland</option>
+                            <option value="WA">Western Australia</option>
+                            <option value="SA">South Australia</option>
+                            <option value="TAS">Tasmania</option>
+                            <option value="ACT">Australian Capital Territory</option>
+                            <option value="NT">Northern Territory</option>
+                        </select>
+                        <span class="select-arrow">▼</span>
+                    </div>
+                </div>
+ 
+                <!-- Checkboxes -->
+                <div class="form-checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="checkbox-input">
+                        <span class="checkbox-box"></span>
+                        <span class="checkbox-text">Create an account?</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="checkbox-input">
+                        <span class="checkbox-box"></span>
+                        <span class="checkbox-text">Agree with our <a href="#" class="policy-link">policy</a></span>
+                    </label>
+                </div>
+ 
+            </div>
+ 
+            <!-- Right: order summary + payment -->
+            <div class="payment-summary-section">
+ 
+                <!-- Shopping bill table -->
+                <div class="shopping-bill">
+                    <h2 class="bill-title">Shopping bill</h2>
+                    <table class="bill-table">
+                        <thead>
+                            <tr>
+                                <th class="bill-th">Product</th>
+                                <th class="bill-th bill-th-right">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="bill-td">Pure Coconut Water 500mL/12 can</td>
+                                <td class="bill-td bill-td-right">$ 37</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="bill-total-label">Total</td>
+                                <td class="bill-total-price">$ 37</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+ 
+                <!-- Continue to Payment button -->
+                <a href="confirm.html" class="btn-continue-payment">
+                    Continue to Payment
+                    <span class="payment-arrow">→</span>
+                </a>
+            </div>
+        </div>
+ 
+    </main>
+ 
+    <!---------------- Footer ----------------->
+    <div class="footer-tagline">
+        Choose H2 to help make every day healthier.
+    </div>
+ 
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Follow us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>How To Shop</h4>
+                <ul>
+                    <li><a href="product_list.html">Buy Now</a></li>
+                    <li><a href="#">Subscribe & Save</a></li>
+                    <li><a href="#">Rewards Program</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copyright">© 2026 H2coco. All rights reserved.</p>
+    </footer>
+</body>
+</html>

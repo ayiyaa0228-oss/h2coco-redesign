@@ -67,7 +67,6 @@
     font-weight: 600;
     margin-bottom: 100px;
     color: var(--color-primary);
-    text-decoration: none;
 }
 
 /* ===== cart with product ===== */
@@ -107,7 +106,6 @@
 .cart-content {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
 }
  
 .cart-items {
@@ -128,24 +126,18 @@
     align-items: center;
     gap: 16px;
     padding: 20px;
-    position: relative;
 }
  
 /* cancel icon */
 .cancel-icon {
-    position: static;
     width: 36px;
     height: 36px;
-    cursor: pointer;
-    flex-shrink: 0;
 }
  
 /* product image */
 .cart-item-img {
     width: auto;
     height: 210px;
-    object-fit: contain;
-    flex-shrink: 0;
     margin-left: 10px;
 }
  
@@ -219,8 +211,7 @@
     font-family: var(--font-heading);
     font-size: 23.29px;
     font-weight: 600;
-    color: var(--color-primary);
-    text-decoration: none;
+    color: var(--color-primary);    
 }
  
 /* coupon */
@@ -239,8 +230,7 @@
     padding: 0 16px;
     font-family: var(--font-body);
     font-size: 16px;
-    color: #000000;
-    outline: none;
+    color: var(--color-text-dark);
 }
  
 .btn-apply {
@@ -253,7 +243,6 @@
     font-size: 23.29px;
     font-weight: 600;
     color: var(--color-primary);
-    cursor: pointer;
 }
  
 /* Total */
@@ -417,7 +406,6 @@
     .suggest-list {
         justify-content: flex-start;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
         padding-bottom: 10px;
     }
  
