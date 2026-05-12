@@ -1,0 +1,325 @@
+/* ===== Main ===== */
+.confirm-main {
+    background-color: var(--color-white);
+    min-height: 60vh;
+    padding-top: 1px;
+    padding-bottom: 60px;
+}
+ 
+/* ===== Back button ===== */
+.back-btn-wrapper {
+    padding-left: 120px;
+    margin-left:40px;
+    margin-top: 39px;
+}
+ 
+.back-btn {
+    display: inline-block;
+    margin: 0;
+}
+ 
+.back-btn img {
+    width: 50px;
+    height: 50px;
+}
+ 
+/* ===== Title ===== */
+.confirm-title {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+ 
+/* ===== Steps ===== */
+.confirm-steps {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top:30px;
+    margin-bottom: 40px;
+}
+ 
+.step {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.step-active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+ 
+/* ===== Check icon ===== */
+.confirm-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+ 
+.confirm-icon {
+    width: 108px;
+    height: 108px;
+    object-fit: contain;
+}
+ 
+/* ===== Confirmation text ===== */
+.confirm-text {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 40px;
+}
+ 
+/* ===== Main content layout ===== */
+.confirm-content {
+    display: flex;
+    gap: 30px;
+    padding: 0 80px;
+    align-items: flex-start;
+    justify-content: center;
+}
+ 
+/* ===== Left: order information ===== */
+.confirm-info-section {
+    flex: none;
+    width: 440px;
+}
+ 
+.confirm-info-title {
+    font-family: var(--font-heading);
+    font-size: 28.8px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+ 
+.confirm-info-list {
+    list-style: disc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+ 
+.confirm-info-list li {
+    font-family: var(--font-body);
+    font-size: 18px;
+    color: var(--color-text-dark);
+}
+ 
+.confirm-edit-link {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--color-text-dark);
+    text-decoration: underline;
+}
+ 
+/* ===== Right: shopping bill ===== */
+.confirm-summary-section {
+    width: 480px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+ 
+.confirm-bill-title {
+    font-family: var(--font-heading);
+    font-size: 28.8px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+}
+ 
+.confirm-shopping-bill {
+    width: 480px;
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    overflow: hidden;
+}
+ 
+.confirm-bill-table {
+    width: 100%;
+    height: 193.5px;
+    border-collapse: collapse;
+}
+ 
+.bill-th {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    padding: 12px 20px;
+    border-bottom: 1.5px solid var(--color-accent);
+    background-color: var(--color-bg-light);
+    text-align: left;
+}
+ 
+.bill-th-right {
+    text-align: right;
+}
+ 
+.bill-td {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--color-text-dark);
+    padding: 12px 20px;
+    text-align: left;
+}
+ 
+.bill-td-right {
+    text-align: right;
+}
+ 
+.bill-total-label,
+.bill-total-price {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    padding: 12px 20px;
+    border-top: 1.5px solid var(--color-accent);
+    background-color: var(--color-bg-light);
+}
+ 
+.bill-total-price {
+    text-align: right;
+}
+ 
+/* ===== Continue to Shopping button ===== */
+.btn-continue-shopping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 480px;
+    height: 73.8px;
+    border-radius: 18px;
+    background-color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-bg-soft);
+    text-decoration: none;
+}
+ 
+.shopping-arrow {
+    font-size: 22px;
+}
+ 
+/* ===== Mobile ===== */
+@media (max-width: 1023px) {
+ 
+    .back-btn-wrapper {
+        padding-left: 20px;
+        margin-left:5px;
+        margin-top: 19px;
+    }
+ 
+    .back-btn img {
+        width: 30px;
+        height: 30px;
+    }
+ 
+    .confirm-title {
+        font-size: 20px;
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+ 
+    .confirm-steps {
+        gap: 30px;
+        margin-bottom: 24px;
+    }
+ 
+    .step {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+ 
+    .confirm-icon {
+        width: 72px;
+        height: 72px;
+    }
+ 
+    .confirm-text {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+ 
+    .confirm-content {
+        flex-direction: column;
+        padding: 0 30px;
+        gap: 24px;
+    }
+ 
+    .confirm-info-section {
+        width: 100%;
+    }
+ 
+    .confirm-info-title {
+        font-size: 18px;
+    }
+ 
+    .confirm-info-list li {
+        font-size: 14px;
+    }
+ 
+    .confirm-summary-section {
+        width: 100%;
+    }
+ 
+    .confirm-bill-title {
+        font-size: 18px;
+    }
+ 
+    .confirm-shopping-bill {
+        width: 100%;
+    }
+
+    .confirm-bill-table {
+    height: auto;
+    }
+ 
+    .bill-th {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+ 
+    .bill-td {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+ 
+    .bill-total-label,
+    .bill-total-price {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+ 
+    .btn-continue-shopping {
+        width: 100%;
+        height: 54px;
+        font-size: 18px;
+        border-radius: 12px;
+    }
+}
