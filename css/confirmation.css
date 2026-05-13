@@ -1,7 +1,6 @@
 /* ===== Main ===== */
 .confirm-main {
     background-color: var(--color-white);
-    min-height: 60vh;
     padding-top: 1px;
     padding-bottom: 60px;
 }
@@ -11,11 +10,6 @@
     padding-left: 120px;
     margin-left:40px;
     margin-top: 39px;
-}
- 
-.back-btn {
-    display: inline-block;
-    margin: 0;
 }
  
 .back-btn img {
@@ -74,7 +68,6 @@
 .confirm-icon {
     width: 108px;
     height: 108px;
-    object-fit: contain;
 }
  
 /* ===== Confirmation text ===== */
@@ -98,7 +91,6 @@
  
 /* ===== Left: order information ===== */
 .confirm-info-section {
-    flex: none;
     width: 440px;
 }
  

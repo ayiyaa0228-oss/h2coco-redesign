@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2coco - Search</title>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+ 
+<body>
+    <!---------------- Header ----------------->
+    <header class="header">
+        <div class="header-inner">
+            <nav class="nav-left">
+                <a href="index.html" class="nav-home-icon" aria-label="Home">
+                    <img src="../images/home-icon.png" alt="Home" width="22" height="22">
+                </a>
+                <a href="product_list.html">SHOP</a>
+                <a href="#">STORY</a>
+            </nav>
+            <a href="index.html" class="logo">
+                <img src="../images/logo.png" alt="H2coco">
+            </a>
+            <nav class="nav-right">
+                <a href="#">FAQ</a>
+                <a href="#">CONTACT</a>
+                <a href="cart.html" class="icon-btn" aria-label="Cart">
+                    <img src="../images/cart.png" alt="Cart" width="24" height="24">
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </nav>
+            <button class="hamburger" aria-label="Menu">
+                <img src="../images/Menu.png" alt="Menu" width="24" height="24">
+            </button>
+            <div class="header-icons">
+                <a href="search.html" class="icon-btn" aria-label="Search">
+                    <img src="../images/Search.png" alt="Search" width="24" height="24">
+                </a>
+                <a href="cart.html" class="icon-btn" aria-label="Cart">
+                    <img src="../images/cart.png" alt="Cart" width="24" height="24">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+ 
+    <main class="search-main">
+ 
+        <!-- Search hero section -->
+        <section class="search-hero">
+ 
+            <!-- Back button -->
+            <div class="back-btn-wrapper">
+                <a href="product_list.html" class="back-btn" aria-label="Go back">
+                    <img src="../images/back-icon.png" alt="Back" width="63" height="63">
+                </a>
+            </div>
+ 
+            <!-- Title -->
+            <h1 class="search-title">Search Product</h1>
+ 
+            <!-- Search bar -->
+            <div class="search-bar-wrapper">
+                <div class="search-input-group">
+                    <img src="../images/Search_white.png" alt="Search" class="search-icon-left">
+                    <input type="text" class="search-input" placeholder="Coconut water with mango">
+                </div>
+                <button class="btn-search">
+                    <img src="../images/Search_white.png" alt="Search" class="search-btn-icon">
+                </button>
+            </div>
+ 
+            <!-- Search result -->
+            <div class="search-result">
+                <div class="product-card search-card">
+                    <div class="product-img-wrapper">
+                        <img src="../images/flavour-2.png" alt="Coconut Water with Mango">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Coconut Water with Mango</h3>
+                        <p class="product-size">500mL / 12 can</p>
+                        <p class="product-price">$ 37</p>
+                        <a href="product_3.html" class="btn-add-cart">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+ 
+        </section>
+ 
+        <!-- Divider -->
+        <hr class="search-divider-line">
+ 
+        <!-- Suggest For You -->
+        <section class="search-suggest">
+            <h2 class="suggest-title">Suggest For You</h2>
+ 
+            <div class="suggest-grid">
+ 
+                <!-- card 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="../images/flavour-1.png" alt="Pure Coconut Water">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pure Coconut Water</h3>
+                        <p class="product-size">500mL / 12 can</p>
+                        <p class="product-price">$ 37</p>
+                        <a href="product_1.html" class="btn-add-cart">Add to cart</a>
+                    </div>
+                </div>
+ 
+                <!-- card 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="../images/flavour-6.png" alt="Pure Coconut Water 2L">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pure Coconut Water</h3>
+                        <p class="product-size">2L / 6 case</p>
+                        <p class="product-price">$ 37</p>
+                        <a href="product_2.html" class="btn-add-cart">Add to cart</a>
+                    </div>
+                </div>
+ 
+                <!-- card 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="../images/flavour-9.png" alt="Coconut Water with Lychee">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Coconut Water with Lychee</h3>
+                        <p class="product-size">500mL / 12 can</p>
+                        <p class="product-price">$ 37</p>
+                        <a href="#" class="btn-add-cart">Add to cart</a>
+                    </div>
+                </div>
+ 
+                <!-- card 4 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="../images/flavour-8.png" alt="Coconut Water with Chocolate">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Coconut Water with Chocolate</h3>
+                        <p class="product-size">1000mL / 6 case</p>
+                        <p class="product-price">$ 25</p>
+                        <a href="#" class="btn-add-cart">Add to cart</a>
+                    </div>
+                </div>
+ 
+            </div>
+        </section>
+ 
+    </main>
+ 
+    <!---------------- Footer ----------------->
+    <div class="footer-tagline">
+        Choose H2 to help make every day healthier.
+    </div>
+ 
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Follow us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>How To Shop</h4>
+                <ul>
+                    <li><a href="product_list.html">Buy Now</a></li>
+                    <li><a href="#">Subscribe & Save</a></li>
+                    <li><a href="#">Rewards Program</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copyright">© 2026 H2coco. All rights reserved.</p>
+    </footer>
+ 
+</body>
+</html>
