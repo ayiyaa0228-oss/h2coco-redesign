@@ -283,8 +283,8 @@
     border-radius: 15.52px;
     background-color: var(--color-primary);
     font-family: var(--font-heading);
-    font-size: 23.29px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
     color: var(--color-bg-soft);
     text-decoration: none;
 }
@@ -558,6 +558,6 @@
         width: 324px;
         height: 41px;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 18px;
     }
 }

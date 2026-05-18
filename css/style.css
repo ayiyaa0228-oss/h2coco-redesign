@@ -727,18 +727,23 @@ body {
     }
 
     .social-header .section-title {
-        font-size: 32px;
+        font-size: 48px;
     }
 
     .social-grid {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
     .social-header {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto 16px;
     }
+
+    .btn-readmore {
+      font-size: 20px;
+      padding: 10px 24px;
+  }
 
     /* ------- Section 6: Available at Woolworths ------- */
 
@@ -817,21 +822,21 @@ body {
 
     .footer-links {
         grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
+        gap: 20px;
     }
 
     .footer-column h4 {
-        font-size: 15px;
+        font-size: 18px;
         margin-bottom: 14px;
     }
 
     .footer-column a {
-        font-size: 13px;
-        padding: 4px 0;
+        font-size: 16px;
+        padding: 5px 0;
     }
 
     .footer-copyright {
-        font-size: 12px;
+        font-size: 16px;
         padding-top: 24px;
         margin-top: 24px;
     }

@@ -84,6 +84,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .img-large {

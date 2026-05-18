@@ -275,11 +275,11 @@
     justify-content: center;
     gap: 12px;
     width: 579.6px;
-    height: 73.8px;
+    height: 60.55px;
     border-radius: 18px;
     background-color: var(--color-primary);
     font-family: var(--font-heading);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--color-bg-soft);
     text-decoration: none;
@@ -387,8 +387,8 @@
  
     .btn-continue-payment {
         width: 100%;
-        height: 54px;
+        height: 41px;
         font-size: 18px;
-        border-radius: 12px;
+        border-radius: 10px;
     }
 }
