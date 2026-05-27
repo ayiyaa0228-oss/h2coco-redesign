@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/confirmation.css">
 </head>
  
-<body>
+<>
     <!---------------- Header ----------------->
     <header class="header">
         <div class="header-inner">
@@ -101,19 +101,22 @@
                         <thead>
                             <tr>
                                 <th class="bill-th">Product</th>
+                                <th class="bill-th">Qty</th>
                                 <th class="bill-th bill-th-right">Subtotal</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="bill-td">Pure Coconut Water 500mL/12 can</td>
-                                <td class="bill-td bill-td-right">$ 37</td>
+                                <td class="bill-td" id="bill-product">Pure Coconut Water 500mL/12 can</td>
+                                <td class="bill-td" id="bill-qty">1</td>
+                                <td class="bill-td bill-td-right" id="bill-subtotal">$ 37</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
                                 <td class="bill-total-label">Total</td>
-                                <td class="bill-total-price">$ 37</td>
+                                <td class="bill-total-label"></td>
+                                <td class="bill-total-price" id="bill-total">$ 37</td>
                             </tr>
                         </tfoot>
                     </table>
@@ -167,6 +170,7 @@
         </div>
         <p class="footer-copyright">© 2026 H2coco. All rights reserved.</p>
     </footer>
- 
+
+ <script src="../js/confirmation.js"></script>
 </body>
 </html>
