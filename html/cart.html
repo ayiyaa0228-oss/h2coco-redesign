@@ -60,7 +60,7 @@
         </div>
  
         <!-- ===== empty cart ===== -->
-        <div class="cart-empty" id="cart-empty" style="display: none;">
+        <div class="cart-empty" id="cart-empty">
  
             <h1 class="cart-title">Shopping Cart</h1>
             <p class="cart-empty-text">Your cart is empty</p>
@@ -80,37 +80,7 @@
             </div>
  
             <div class="cart-content">
-                <div class="cart-items">
- 
-                    <!-- product card -->
-                    <div class="cart-item-card">
-                        <img src="../images/cancel_icon.png" alt="Remove" class="cancel-icon" width="36" height="36">
-                        <img src="../images/flavour-1.png" alt="Pure Coconut Water" class="cart-item-img">
-                        <div class="cart-item-info">
-                            <div class="cart-item-row">
-                                <span class="cart-info-label">Product:</span>
-                                <span class="cart-info-value">Pure Coconut Water<br>500mL/12 can</span>
-                            </div>
-                            <div class="cart-item-row">
-                                <span class="cart-info-label">Price:</span>
-                                <span class="cart-info-value" data-price="37">$ 37</span>
-                            </div>
-                            <div class="cart-item-row">
-                                <span class="cart-info-label">quantity:</span>
-
-                                <div class="cart-qty-controller">
-                                    <button class="qty-btn" aria-label="Decrease"><span>−</span></button>
-                                    <span class="qty-number">1</span>
-                                    <button class="qty-btn" aria-label="Increase"><span>+</span></button>
-                                </div>
-                            </div>
-                            <div class="cart-item-row">
-                                <span class="cart-info-label">Subtotal:</span>
-                                <span class="cart-info-value">$ 37</span>
-                            </div>
-                        </div>
-                    </div>
- 
+                <div class="cart-items" id="cart-items">
                 </div>
  
                 <div class="cart-summary">
@@ -236,6 +206,7 @@
     
     <script src="../js/quantity.js"></script>
     <script src="../js/cart.js"></script>
+    <script src="../js/cart-count.js"></script>
     
 </body>
 </html>

@@ -1,13 +1,29 @@
-// Read cart data from localStorage
-const savedData = localStorage.getItem("cartData");
+const savedCart = localStorage.getItem("cart");
 
-if (savedData) {
-    // Convert text back to an object
-    const cartData = JSON.parse(savedData);
+if (savedCart) {
+    const cart = JSON.parse(savedCart);
 
-    // Fill the bill table
-    document.getElementById("bill-product").textContent = cartData.name;
-    document.getElementById("bill-qty").textContent = cartData.qty;
-    document.getElementById("bill-subtotal").textContent = "$ " + cartData.subtotal;
-    document.getElementById("bill-total").textContent = "$ " + cartData.total;
+    // Calculate total
+    let total = 0;
+    for (let i = 0; i < cart.length; i++) {
+        total = total + (cart[i].price * cart[i].qty);
+    }
+
+    // Get the table body to add rows
+    const tbody = document.querySelector(".confirm-bill-table tbody");
+    tbody.innerHTML = "";
+
+    // Add a row for each product
+    for (let i = 0; i < cart.length; i++) {
+        const product = cart[i];
+        const subtotal = product.price * product.qty;
+
+        const row = document.createElement("tr");
+        row.innerHTML =
+            '<td class="bill-td">' + product.name + ' ' + product.size + '</td>' +
+            '<td class="bill-td bill-td-right">$ ' + subtotal + '</td>';
+        tbody.appendChild(row);
+    }
+
+    document.getElementById("bill-total").textContent = "$ " + total;
 }

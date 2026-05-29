@@ -24,6 +24,7 @@
 /* ===== empty cart ===== */
 .cart-empty {
     display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     padding: 10px 120px;
