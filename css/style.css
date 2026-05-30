@@ -558,10 +558,6 @@ body {
 
     .hero-search {
         display: flex;
-        position: absolute;
-        top: 24px;
-        right: 120px;
-        z-index: 3;
         align-items: center;
         gap: 8px;
         width: 377px;
@@ -585,6 +581,48 @@ body {
     .hero-search img {
     flex-shrink: 0;
     filter: brightness(0);
+    }
+
+    .hero-search-wrapper {
+      position: absolute;
+      top: 24px;
+      right: 120px;
+      z-index: 3;
+    }
+
+    .hero-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 8px;
+        background-color: var(--color-white);
+        border-radius: 16px;
+        padding: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        flex-wrap: wrap;
+        gap: 10px;
+        z-index: 10;
+    }
+
+    .hero-dropdown.show {
+        display: flex;
+    }
+
+    .hero-dropdown-tag {
+        background-color: var(--color-bg-soft);
+        color: var(--color-primary);
+        padding: 8px 18px;
+        border-radius: 20px;
+        font-family: var(--font-body);
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .hero-dropdown-tag:hover {
+        background-color: var(--color-accent);
+        color: var(--color-white);
     }
 
     /* ------- Section 2: Why choose us ------- */

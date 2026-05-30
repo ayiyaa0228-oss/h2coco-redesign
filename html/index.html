@@ -66,9 +66,17 @@
                 <img src="../images/hero-desk.png" class="hero-image hero-desktop" alt="H2coco hero">
             </div>
 
-            <div class="hero-search">
-                <img src="../images/Search.png" alt="Search" width="16" height="16">
-                <input type="text" placeholder="mango" aria-label="Search products">
+            <div class="hero-search-wrapper">
+                <div class="hero-search">
+                    <img src="../images/Search.png" alt="Search" width="16" height="16">
+                    <input type="text" class="hero-search-input" placeholder="mango" aria-label="Search products" readonly>
+                </div>
+                <div class="hero-dropdown" id="hero-dropdown">
+                    <a href="search.html?keyword=pure" class="hero-dropdown-tag">Pure</a>
+                    <a href="search.html?keyword=mango" class="hero-dropdown-tag">Mango</a>
+                    <a href="search.html?keyword=lychee" class="hero-dropdown-tag">Lychee</a>
+                    <a href="search.html?keyword=chocolate" class="hero-dropdown-tag">Chocolate</a>
+                </div>
             </div>
         </section>
 
@@ -271,6 +279,7 @@
     </footer>
 
     <script src="../js/cart-count.js"></script>
+    <script src="../js/hero-search.js"></script>
 </body>
 </html>
 

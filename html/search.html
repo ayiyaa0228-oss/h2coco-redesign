@@ -75,21 +75,16 @@
                     <img src="../images/Search_white.png" alt="Search" class="search-btn-icon">
                 </button>
             </div>
- 
-            <!-- Search result -->
-            <div class="search-result">
-                <a href="product_3.html" class="product-card search-card">
-                    <div class="product-img-wrapper">
-                        <img src="../images/flavour-2.png" alt="Coconut Water with Mango">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Coconut Water with Mango</h3>
-                        <p class="product-size">500mL / 12 can</p>
-                        <p class="product-price">$ 37</p>
-                        <span class="btn-add-cart">Add to cart</span>
-                    </div>
-                </a>
+
+            <!-- Search dropdown -->
+            <div class="search-dropdown" id="search-dropdown">
+                <div class="dropdown-tag" data-keyword="pure">Pure</div>
+                <div class="dropdown-tag" data-keyword="mango">Mango</div>
+                <div class="dropdown-tag" data-keyword="lychee">Lychee</div>
+                <div class="dropdown-tag" data-keyword="chocolate">Chocolate</div>
             </div>
+ 
+            <div class="search-result" id="search-result"></div>
  
         </section>
  
@@ -198,5 +193,6 @@
     </footer>
     
 <script src="../js/cart-count.js"></script>
+<script src="../js/search.js"></script>
 </body>
 </html>
