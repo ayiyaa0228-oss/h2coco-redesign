@@ -141,7 +141,7 @@ tags.forEach(function (tag) {
 
                 localStorage.setItem("cart", JSON.stringify(cart));
                 updateCartCount();
-                alert("Added to cart!");
+                showToast();
             });
         }
     });

@@ -42,6 +42,6 @@ addBtns.forEach(function (btn) {
 
         localStorage.setItem("cart", JSON.stringify(cart));
         updateCartCount();
-        alert("Added to cart!");
+        showToast();
     });
 });

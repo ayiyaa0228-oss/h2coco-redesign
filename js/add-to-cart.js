@@ -42,5 +42,5 @@ addBtn.addEventListener("click", function () {
     // Save the updated list back to localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCartCount();
-    alert("Added to cart!");
+    showToast();
 });

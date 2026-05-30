@@ -14,6 +14,12 @@
 </head>
 
 <body>
+
+    <div class="toast" id="cart-toast">
+        Successfully added to cart！
+        <a href="cart.html" class="tost-open">Open</a>
+    </div>
+
     <!---------------- Header ----------------->
     <header class="header">
         <div class="header-inner">
@@ -53,7 +59,7 @@
     <main class="product-detail-main">
 
         <!-- Back button -->
-        <a href="product_list.html" class="back-btn" aria-label="Go back">
+        <a href="javascript:history.back()" class="back-btn" aria-label="Go back">
             <img src="../images/back-icon.png" alt="Back" width="63" height="63">
         </a>
 
@@ -195,6 +201,7 @@
 
     <script src="../js/quantity.js"></script>
     <script src="../js/cart-count.js"></script>
+    <script src="../js/toast.js"></script>
     <script src="../js/add-to-cart.js"></script>
 </body>
 </html>
