@@ -43,36 +43,26 @@
     gap: 12px;
 }
 
-/* First thumbnail: white card with shadow */
-.thumb-card {
-    width: 90px;
-    height: 90px;
-    background-color: var(--color-white);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.thumb-card img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-}
-
-/* Other thumbnails: no card */
+/* All thumbnails: plain, no card */
 .thumb-img {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     cursor: pointer;
     opacity: 0.7;
+    border-radius: 15px;
+    transition: opacity 0.2s ease;
 }
 
 .thumb-img:hover {
     opacity: 1;
+}
+
+/* Selected thumbnail: white card with shadow */
+.thumb-active {
+    opacity: 1;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Main product image */
@@ -293,6 +283,48 @@
     font-size: 18px;
     font-weight: 700;
 }
+
+/* Nutrition modal */
+.nutrition-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 200;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nutrition-overlay.show {
+    display: flex;
+}
+
+.nutrition-modal {
+    position: relative;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    margin-top: 80px;
+    max-width: 90%;
+    max-height: 80vh;
+    overflow: auto;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease;
+}
+
+.nutrition-overlay.show .nutrition-modal {
+    transform: translateY(0);
+}
+
+.nutrition-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
 @media (min-width: 1024px) {
     .detail-col:first-child {
         padding-left: 0;
@@ -300,6 +332,11 @@
 
     .detail-col:last-child {
         padding-left: 10px;
+    }
+
+    .nutrition-modal {
+        max-width: 600px;
+        margin-top: 140px;
     }
 }
 
