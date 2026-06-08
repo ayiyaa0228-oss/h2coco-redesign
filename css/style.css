@@ -506,7 +506,9 @@ body {
 
 /* ------- section 6: Available at woolworths ------- */
 .partner {
-  background-color: var(--color-accent);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1)), url('../images/shop_in_wws.png');
+  background-size: cover;
+  background-position: center;
   padding: 40px 20px;
   text-align: center;
 }
@@ -758,7 +760,7 @@ body {
         width: 377px;
         height: 61px;
         background-color: rgba(232, 245, 233, 0.5);
-        border: 1.5px solid #6B8D23;
+        border: 1.5px solid var(--color-accent);
         border-radius: 20px;
         padding: 0 16px;
     }
